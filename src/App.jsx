@@ -70,14 +70,7 @@ function App() {
               }}
               country={countryimg}
               img={playerimg}
-            />
-            <PlayerCard
-              playername={{
-                first: "Kevin",
-                last: "De Bruyne",
-              }}
-              country={countryimg}
-              img={playerimg}
+              isCaptain
             />
             <PlayerCard
               playername={{
@@ -89,6 +82,14 @@ function App() {
             />
           </div>
           <div className="flex justify-center items-center gap-x-24">
+            <PlayerCard
+              playername={{
+                first: "Kevin",
+                last: "De Bruyne",
+              }}
+              country={countryimg}
+              img={playerimg}
+            />
             <PlayerCard
               playername={{
                 first: "Kevin",
