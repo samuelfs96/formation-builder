@@ -7,8 +7,8 @@ export default function PlayerCard({ playername, country, img, isCaptain }) {
         className="absolute left-[-15px] top-[60px] z-10"
       />
       {isCaptain && (
-        <div className="rounded-sm absolute right-[-10px] top-[60px] z-10 w-[25px] h-[25px] border-mci_blue bg-white border-y-4 flex justify-center items-center">
-          <span className="text-mci_blue mb-[4.5px] font-bold text-lg">c</span>
+        <div className="rounded-sm absolute right-[-10px] top-[60px] z-10 w-[25px] h-[25px] border-mci_blue_dark bg-white border-y-4 flex justify-center items-center">
+          <span className="text-mci_blue_dark mb-[4.5px] font-bold text-lg">c</span>
         </div>
       )}
       <img src={img} alt="player_img" className="absolute top-[-15px]" />
