@@ -1,8 +1,23 @@
-# React + Vite
+# Manchester City - Formation Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an application made with react, with the aim of testing the @formkit/drag-and-drop library by creating an interface based on the ui of the official premiership broadcasts, it allows you to create a formation with the players of machester city.
 
-Currently, two official plugins are available:
+### Screenshot
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![](./screenshot_desktop.png)
+
+## Reference
+
+![](./premier_ref.jpg)
+
+### Links
+
+- Live Site URL: [https://mci-formation-builder.netlify.app/](https://mci-formation-builder.netlify.app/)
+
+## Note
+
+This is for educational and entertainment purposes, all rights reserved belong to [PremierLeague](https://www.premierleague.com/).
+
+## Author
+
+- Website - [Samuel Figueroa](https://sfweb.netlify.app/)
