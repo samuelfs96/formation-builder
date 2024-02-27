@@ -12,7 +12,7 @@ export default function PlayerCard({ playername, country, img, isCaptain }) {
         </div>
       )}
       <img src={img} alt="player_img" className="absolute top-[-15px]" />
-      <div className="pb-1 absolute bottom-0 left-0 w-full bg-[#6697c5] rounded-br-lg">
+      <div className="pb-1 absolute bottom-0 left-0 w-full bg-mci_blue_dark rounded-br-lg">
         <h2 className="text-center text-white font-bold">{playername.last}</h2>
       </div>
     </div>

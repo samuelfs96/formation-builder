@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         mci_blue: "#8bbcdd",
+        mci_blue_dark: '#6697c5',
       },
       backgroundImage: {
         bg_premier: "url('../src/assets/img/premierleague-bg.png')"
