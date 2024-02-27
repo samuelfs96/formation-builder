@@ -35,15 +35,15 @@ export default function Aside({ players }) {
           src={teamlogo}
           alt="mnc_logo"
         />
-        <div className="pt-20 pl-28">
-          <h2 className="text-2xl font-bold mb-6">Substitutes</h2>
+        <div className="pt-28 pl-28">
+          <h2 className="text-3xl font-bold mb-6">Substitutes</h2>
           <div ref={players.ref} className="h-[400px] flex flex-col flex-wrap">
             {players.items.map((player) => (
-              <p key={player.number} className="mb-1 cursor-grab hover:-translate-x-4 transition-transform">
+              <p key={player.number} className="text-lg mb-1 cursor-grab hover:-translate-x-4 transition-transform">
                 <span className="mr-2 font-bold">{player.number}</span>
                 {player.firstName}{" "}
                 <span className="font-bold">{player.lastName}</span>
-                {player.position === 'goalkeeper' && '(GK)'}
+                {player.position === 'goalkeeper' && ' (GK)'}
               </p>
             ))}
           </div>
