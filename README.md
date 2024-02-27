@@ -1,6 +1,6 @@
 # Manchester City - Formation Builder
 
-This is an application made with react, with the aim of testing the @formkit/drag-and-drop library by creating an interface based on the ui of the official premiership broadcasts, it allows you to create a formation with the players of machester city.
+This is an application made with react, with the aim of testing the [@formkit/drag-and-drop](https://drag-and-drop.formkit.com/) library by creating an interface based on the ui of the official premiership broadcasts, it allows you to create a formation with the players of machester city.
 
 ### Screenshot
 
