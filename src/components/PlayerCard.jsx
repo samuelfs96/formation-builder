@@ -1,6 +1,6 @@
 export default function PlayerCard({ playername, country, img, isCaptain }) {
   return (
-    <div className="rounded-lg bg-mci_blue relative w-[90px] h-[120px] shadow-md">
+    <div className="rounded-lg bg-mci_blue relative w-[90px] h-[120px] shadow-md cursor-grab hover:scale-110 transition-transform">
       <img
         src={country}
         alt="country_img"

@@ -1,6 +1,6 @@
 import teamlogo from "../assets/img/mnc.png";
 
-export default function Aside() {
+export default function Aside({ players }) {
   return (
     <div className="h-full rounded-tl-[50px] rounded-bl-[50px] opacity-80 bg-mci_blue relative">
       <svg
@@ -31,32 +31,22 @@ export default function Aside() {
       </svg>
       <div className="relative">
         <img
-          className="absolute -left-16 top-2/3 z-10 shadow-md rounded-full"
+          className="absolute -left-16 top-1/2 z-10 shadow-md rounded-full"
           src={teamlogo}
           alt="mnc_logo"
         />
-        <div className="py-28 pl-24">
+        <div className="pt-20 pl-28">
           <h2 className="text-2xl font-bold mb-6">Substitutes</h2>
-          <p className="mb-1">
-            <span className="mr-2 font-bold">17</span>Kevin{" "}
-            <span className="font-bold">De Bruyne</span>
-          </p>
-          <p className="mb-1">
-            <span className="mr-2 font-bold">17</span>Kevin{" "}
-            <span className="font-bold">De Bruyne</span>
-          </p>
-          <p className="mb-1">
-            <span className="mr-2 font-bold">17</span>Kevin{" "}
-            <span className="font-bold">De Bruyne</span>
-          </p>
-          <p className="mb-1">
-            <span className="mr-2 font-bold">17</span>Kevin{" "}
-            <span className="font-bold">De Bruyne</span>
-          </p>
-          <p className="mb-1">
-            <span className="mr-2 font-bold">17</span>Kevin{" "}
-            <span className="font-bold">De Bruyne</span>
-          </p>
+          <div ref={players.ref} className="h-[400px] flex flex-col flex-wrap">
+            {players.items.map((player) => (
+              <p key={player.number} className="mb-1 cursor-grab hover:-translate-x-4 transition-transform">
+                <span className="mr-2 font-bold">{player.number}</span>
+                {player.firstName}{" "}
+                <span className="font-bold">{player.lastName}</span>
+                {player.position === 'goalkeeper' && '(GK)'}
+              </p>
+            ))}
+          </div>
         </div>
       </div>
     </div>
